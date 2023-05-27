@@ -1,0 +1,55 @@
+@keyframes shakeLeftAndGetBack {
+  0% {
+    transform: rotate(0turn);
+  }
+  50% {
+    transform: rotate(0.05turn);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+#left-ear {
+  animation: shakeLeftAndGetBack 1s infinite;
+  /* transform-box는 transform이 실행되는 레이아웃 박스를 정의한다. */
+  transform-box: fill-box;
+  transform-origin: 40% 0%;
+}
+
+@keyframes shakeRightAndGetBack {
+  0% {
+    transform: rotate(0turn);
+  }
+  50% {
+    transform: rotate(-0.04turn);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+
+#right-ear {
+  animation: shakeRightAndGetBack 1s infinite;
+  transform-box: fill-box;
+  transform-origin: 0% 0%;
+}
+
+/* //TODO: 꼬리는 왜 이동 범위가 엄청 큰지 잘 모르겠다... 나중에 알면 수정할것 */
+/* @keyframes UpAndDown {
+  0% {
+    transform: translateY(1000px);
+  }
+  50% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateY(1000px);
+  }
+}
+
+#g816 {
+  animation: UpAndDown 1s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+} */

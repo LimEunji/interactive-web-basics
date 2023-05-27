@@ -1,0 +1,33 @@
+@keyframes shrinkAndGetBack {
+  0% {
+    transform: scale(0.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.3);
+  }
+}
+
+.com\.sun\.star\.drawing\.CustomShape {
+  animation: shrinkAndGetBack 0.5s infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+@keyframes upAndGetBack {
+  0% {
+    transform: translateY(100px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(70px);
+  }
+}
+
+#id5 {
+  animation: upAndGetBack 0.5s infinite;
+}
