@@ -1,0 +1,22 @@
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#rect20843,
+#rect1342 {
+  animation: rotate 5s infinite linear reverse;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+#rect12293,
+#rect38 {
+  animation: rotate 5s infinite linear;
+  transform-box: fill-box;
+  transform-origin: center;
+}
